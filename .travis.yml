@@ -35,5 +35,13 @@ script:
     && (echo 'Idempotence test: pass' && exit 0)
     || (echo 'Idempotence test: fail' && exit 1)
 
+  # Test nodejs installation
+  - >
+    echo 'console.log("PING".replace("I", "O"));'
+    | nodejs
+    | grep -q 'PONG'
+    && (echo 'Availability test: pass' && exit 0)
+    || (echo 'Availability test: fail' && exit 1)
+
 notifications:
   email: false
