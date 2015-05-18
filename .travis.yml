@@ -12,7 +12,7 @@ env:
 before_install:
   - sudo apt-get update -qq
 
-  # Remove git
+  # Remove nodejs
   - sudo apt-get remove --purge nodejs
 
 install:
