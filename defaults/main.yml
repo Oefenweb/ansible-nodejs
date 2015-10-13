@@ -1,5 +1,5 @@
----
 # defaults file for nodejs
+---
 nodejs_install:
   # To compile and install native addons from npm you may also need to install build tools
   - build-essential

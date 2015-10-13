@@ -1,5 +1,5 @@
----
 # meta file for nodejs
+---
 galaxy_info:
   author: Mischa ter Smitten
   company: Oefenweb.nl B.V.
@@ -7,10 +7,10 @@ galaxy_info:
   license: MIT
   min_ansible_version: 1.4
   platforms:
-  - name: Ubuntu
-    versions:
-    - all
+    - name: Ubuntu
+      versions:
+        - all
   categories:
-  - system
-  - web
+    - system
+    - web
 dependencies: []
