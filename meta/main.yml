@@ -9,7 +9,12 @@ galaxy_info:
   platforms:
     - name: Ubuntu
       versions:
-        - all
+        - precise
+        - trusty
+    - name: Debian
+      versions:
+        - wheezy
+        - jessie
   categories:
     - system
     - web

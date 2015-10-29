@@ -7,8 +7,11 @@ Set up the latest version of nodejs and npm in Ubuntu systems.
 #### Requirements
 
 * `python-apt`
+* `curl` (will be installed)
 
 #### Variables
+
+* `nodejs_version` [default: `nodejs-v4x`]: Version to install (e.g. `nodejs-v012`, `nodejs-v010`, `iojs-v3x`, `iojs-v2x`, `iojs-v1x`)
 
 * `nodejs_install` [default: `[build-essential]`]: Packages to install
 * `nodejs_npm_packages` [default: `[]`]: Node.js packages to install (globally)
@@ -23,7 +26,7 @@ None
 ---
 - hosts: all
   roles:
-  - nodejs
+    - nodejs
 ```
 
 #### License

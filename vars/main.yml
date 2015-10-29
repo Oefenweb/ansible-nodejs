@@ -1,4 +1,12 @@
 # vars file for nodejs
 ---
+nodejs_version_map:
+  nodejs-v4x: '4.x'
+  nodejs-v012: '0.12'
+  nodejs-v010: '0.10'
+  iojs-v3x: 'iojs_3.x'
+  iojs-v2x: 'iojs_2.x'
+  iojs-v1x: 'iojs_1.x'
+
 nodejs_dependencies:
-  - nodejs
+  - curl
