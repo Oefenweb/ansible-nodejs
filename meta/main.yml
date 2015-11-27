@@ -3,7 +3,7 @@
 galaxy_info:
   author: Mischa ter Smitten
   company: Oefenweb.nl B.V.
-  description: Set up the latest version of nodejs and npm in Ubuntu systems
+  description: Set up the latest version of nodejs and npm in Debian-like systems
   license: MIT
   min_ansible_version: 1.4
   platforms:
