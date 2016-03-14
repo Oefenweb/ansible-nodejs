@@ -44,7 +44,7 @@ before_install:
   - sudo apt-get update -qq
 
   # Remove nodejs
-  - sudo apt-get remove --purge nodejs
+  - sudo apt-get remove --purge --yes nodejs
 
 install:
   # Install Ansible.
