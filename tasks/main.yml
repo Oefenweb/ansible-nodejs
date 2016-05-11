@@ -6,7 +6,7 @@
     state: latest
     update_cache: true
     cache_valid_time: "{{ apt_update_cache_valid_time | default(3600) }}"
-  with_items: nodejs_dependencies
+  with_items: "{{ nodejs_dependencies }}"
   tags:
     - configuration
     - nodejs
@@ -17,7 +17,7 @@
   apt:
     name: "{{ item }}"
     state: latest
-  with_items: nodejs_install
+  with_items: "{{ nodejs_install }}"
   tags:
     - configuration
     - nodejs
@@ -50,7 +50,7 @@
     name: "{{ item }}"
     state: latest
     global: true
-  with_items: nodejs_npm_packages
+  with_items: "{{ nodejs_npm_packages }}"
   tags:
     - configuration
     - nodejs
