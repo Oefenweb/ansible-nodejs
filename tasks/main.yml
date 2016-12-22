@@ -3,7 +3,7 @@
 - name: install dependencies
   apt:
     name: "{{ item }}"
-    state: latest
+    state: "{{ apt_install_state | default('latest') }}"
     update_cache: true
     cache_valid_time: "{{ apt_update_cache_valid_time | default(3600) }}"
   with_items: "{{ nodejs_dependencies }}"
@@ -16,7 +16,7 @@
 - name: install additional
   apt:
     name: "{{ item }}"
-    state: latest
+    state: "{{ apt_install_state | default('latest') }}"
   with_items: "{{ nodejs_install }}"
   tags:
     - configuration
@@ -25,7 +25,7 @@
     - nodejs-install-additional
 
 - name: add repository and install its signing key
-  shell: "curl -sL https://deb.nodesource.com/setup_{{ nodejs_version_map[nodejs_version] }} | bash -"
+  shell: curl -sL https://deb.nodesource.com/setup_{{ nodejs_version_map[nodejs_version] }} | bash -
   args:
     creates: "/etc/apt/sources.list.d/nodesource.list"
   changed_when: false
@@ -38,7 +38,7 @@
 - name: install
   apt:
     name: "{{ 'nodejs' if 'nodejs' in nodejs_version else 'iojs' }}"
-    state: latest
+    state: "{{ apt_install_state | default('latest') }}"
   tags:
     - configuration
     - nodejs
