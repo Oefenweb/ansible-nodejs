@@ -27,8 +27,7 @@
 - name: add repository and install its signing key
   shell: curl -sL https://deb.nodesource.com/setup_{{ nodejs_version_map[nodejs_version] }} | bash -
   args:
-    creates: "/etc/apt/sources.list.d/nodesource.list"
-  changed_when: false
+    creates: /etc/apt/sources.list.d/nodesource.list
   tags:
     - configuration
     - nodejs
