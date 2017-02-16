@@ -46,8 +46,8 @@
 
 - name: install node.js packages (globally)
   npm:
-    name: "{{ item }}"
-    state: latest
+    name: "{{ item.name }}"
+    version: "{{ item.version | default('latest') }}"
     global: true
   with_items: "{{ nodejs_npm_packages }}"
   tags:
