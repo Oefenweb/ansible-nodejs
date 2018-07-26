@@ -1,6 +1,6 @@
 ## nodejs
  
-[![Build Status](https://travis-ci.org/Oefenweb/ansible-nodejs.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-nodejs) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-nodejs-blue.svg)](https://galaxy.ansible.com/tersmitten/nodejs)
+[![Build Status](https://travis-ci.org/Oefenweb/ansible-nodejs.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-nodejs) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-nodejs-blue.svg)](https://galaxy.ansible.com/Oefenweb/nodejs)
 
 Set up the latest version of [Node.js](https://nodejs.org) and [npm](https://www.npmjs.com) in Debian-like systems.
 
