@@ -11,7 +11,7 @@ Set up the latest version of [Node.js](https://nodejs.org) and [npm](https://www
 
 #### Variables
 
-* `nodejs_version` [default: `nodejs-v6x`]: Version to install (e.g. `nodejs-v7x`, `nodejs-v6x`, `nodejs-v5x`, `nodejs-v012`, `nodejs-v010`, `iojs-v3x`, `iojs-v2x`, `iojs-v1x`)
+* `nodejs_version` [default: `nodejs-v6x`]: Version to install (e.g. `nodejs-v10x`, `nodejs-v9x`, `nodejs-v8x`, `nodejs-v7x`, `nodejs-v6x`, `nodejs-v5x`, `nodejs-v012`, `nodejs-v010`, `iojs-v3x`, `iojs-v2x`, `iojs-v1x`)
 
 * `nodejs_install` [default: `[build-essential]`]: Packages to install
 
