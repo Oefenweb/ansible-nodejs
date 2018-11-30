@@ -1,6 +1,6 @@
 # post test file for nodejs
 ---
-- name: Run tests
+- name: run tests
   command: "{{ item }}"
   changed_when: false
   with_items:

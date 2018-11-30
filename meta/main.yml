@@ -1,6 +1,7 @@
 # meta file for nodejs
 ---
 galaxy_info:
+  role_name: nodejs
   author: Mischa ter Smitten
   company: Oefenweb.nl B.V.
   description: Set up the latest version of Node.js and npm in Debian-like systems
