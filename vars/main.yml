@@ -1,6 +1,7 @@
 # vars file for nodejs
 ---
 nodejs_version_map:
+  nodejs-v12x: '12.x'
   nodejs-v10x: '10.x'
   nodejs-v9x: '9.x'
   nodejs-v8x: '8.x'
