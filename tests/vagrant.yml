@@ -3,14 +3,13 @@
 - hosts: all
   remote_user: vagrant
   become: true
+  pre_tasks:
+    - name: include vars
+      include_vars: "{{ playbook_dir }}/vars/main.yml"
   roles:
     - ../../
-
   post_tasks:
-    - include: post.yml
-
-  vars:
-    nodejs_npm_packages:
-      - name: jslint
-        version: 0.9.6
-      - name: yo
+    - name: include vars
+      include_vars: "{{ playbook_dir }}/vars/main.yml"
+    - name: include tasks
+      include: "{{ playbook_dir }}/tasks/post.yml"
