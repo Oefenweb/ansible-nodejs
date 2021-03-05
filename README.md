@@ -7,7 +7,8 @@ Set up the latest version of [Node.js](https://nodejs.org) and [npm](https://www
 
 #### Requirements
 
-* `python-apt`
+* `software-properties-common` (will be installed)
+* `dirmngr` (will be installed)
 * `curl` (will be installed)
 
 #### Variables

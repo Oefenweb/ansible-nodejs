@@ -19,4 +19,6 @@ nodejs_version_map:
   iojs-v1x: 'iojs_1.x'
 
 nodejs_dependencies:
+  - software-properties-common
+  - dirmngr
   - curl
