@@ -1,13 +1,14 @@
 ## nodejs
 
-[![Build Status](https://travis-ci.org/Oefenweb/ansible-nodejs.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-nodejs)
+[![CI](https://github.com/Oefenweb/ansible-nodejs/workflows/CI/badge.svg)](https://github.com/Oefenweb/ansible-nodejs/actions?query=workflow%3ACI)
 [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-nodejs-blue.svg)](https://galaxy.ansible.com/Oefenweb/nodejs)
 
 Set up the latest version of [Node.js](https://nodejs.org) and [npm](https://www.npmjs.com) in Debian-like systems.
 
 #### Requirements
 
-* `python-apt`
+* `software-properties-common` (will be installed)
+* `dirmngr` (will be installed)
 * `curl` (will be installed)
 
 #### Variables
