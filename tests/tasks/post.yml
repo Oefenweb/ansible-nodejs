@@ -1,4 +1,4 @@
-# post test file for nodejs
+# post test file
 ---
 - name: install dependencies
   apt:

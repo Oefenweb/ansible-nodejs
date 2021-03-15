@@ -1,4 +1,4 @@
-# tasks file for nodejs
+# tasks file
 ---
 - name: install dependencies
   apt:

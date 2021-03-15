@@ -1,4 +1,4 @@
-# vars file for nodejs
+# vars file
 ---
 nodejs_version_map:
   nodejs-v15x: '15.x'
