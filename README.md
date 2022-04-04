@@ -13,7 +13,7 @@ Set up the latest version of [Node.js](https://nodejs.org) and [npm](https://www
 
 #### Variables
 
-* `nodejs_version` [default: `nodejs-v12x`]: Version to install (e.g. `nodejs-v15x`, `nodejs-v14x`, `nodejs-v13x`, `nodejs-v12x`, `nodejs-v10x`, `nodejs-v8x`, `nodejs-v7x`, `nodejs-v6x`, `nodejs-v5x`, `nodejs-v012`, `nodejs-v010`, `iojs-v3x`, `iojs-v2x`, `iojs-v1x`, or a specific version, e.g. `12.18.1`)
+* `nodejs_version` [default: `nodejs-v12x`]: Version to install (e.g. `nodejs-v17x`, `nodejs-v16x`, `nodejs-v15x`, `nodejs-v14x`, `nodejs-v13x`, `nodejs-v12x`, `nodejs-v10x`, `nodejs-v8x`, `nodejs-v7x`, `nodejs-v6x`, `nodejs-v5x`, `nodejs-v012`, `nodejs-v010`, `iojs-v3x`, `iojs-v2x`, `iojs-v1x`, or a specific version, e.g. `12.18.1`)
 * `nodejs_install` [default: `[build-essential]`]: Packages to install
 * `nodejs_npm_packages`: [default: `[]`]: Node.js packages to install (globally)
 * `nodejs_npm_packages.{n}.name`: [required]: The name of the package
