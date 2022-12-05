@@ -22,12 +22,11 @@
     - nodejs-install
     - nodejs-install-additional
 
-- name: add repository and install its signing key
+- name: add repository and install its signing key  # noqa command-instead-of-module
   shell: >
     curl -sL https://deb.nodesource.com/setup_{{ nodejs_version_map[nodejs_version] }} | bash -
   args:
     creates: /etc/apt/sources.list.d/nodesource.list
-    warn: false
   tags:
     - configuration
     - nodejs

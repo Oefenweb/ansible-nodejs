@@ -8,15 +8,13 @@
     update_cache: true
     cache_valid_time: "{{ apt_update_cache_valid_time | default(3600) }}"
 
-- name: test installation
+- name: test installation  # noqa command-instead-of-module
   command: >
     echo 'console.log("PING".replace("I", "O"));'
     | nodejs
     | grep -q 'PONG'
     && (echo 'Availability test: pass' && exit 0)
     || (echo 'Availability test: fail' && exit 1)
-  args:
-    warn: false
   register: _result
   changed_when: false
   tags:
