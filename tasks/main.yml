@@ -44,13 +44,24 @@
     - nodejs-install-install
 
 - name: install node.js packages (globally)
-  community.general.npm:
-    name: "{{ item.name }}"
-    version: "{{ item.version | default('latest') }}"
-    global: true
-  with_items: "{{ nodejs_npm_packages }}"
   tags:
     - configuration
     - nodejs
     - nodejs-npm
     - nodejs-npm-install
+  block:
+    - name: install node.js packages (specific version)
+      community.general.npm:
+        name: "{{ item.name }}"
+        version: "{{ item.version }}"
+        global: true
+      with_items: "{{ nodejs_npm_packages }}"
+      when: "item.version | default('latest') != 'latest'"
+
+    - name: install node.js packages (latest version)
+      community.general.npm:
+        name: "{{ item.name }}"
+        state: "{{ item.version | default('latest') }}"
+        global: true
+      with_items: "{{ nodejs_npm_packages }}"
+      when: "item.version | default('latest') == 'latest'"
