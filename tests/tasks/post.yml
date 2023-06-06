@@ -1,7 +1,7 @@
 # post test file
 ---
-- name: install dependencies
-  apt:
+- name: install dependencies  # noqa package-latest
+  ansible.builtin.apt:
     name:
       - curl
     state: latest
@@ -9,7 +9,7 @@
     cache_valid_time: "{{ apt_update_cache_valid_time | default(3600) }}"
 
 - name: test installation  # noqa command-instead-of-module
-  command: >
+  ansible.builtin.command: >
     echo 'console.log("PING".replace("I", "O"));'
     | nodejs
     | grep -q 'PONG'
@@ -21,7 +21,7 @@
     - skip_ansible_lint
 
 - name: run tests
-  command: >
+  ansible.builtin.command: >
     {{ item }}
   changed_when: false
   with_items:
