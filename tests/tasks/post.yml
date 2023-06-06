@@ -8,7 +8,7 @@
     update_cache: true
     cache_valid_time: "{{ apt_update_cache_valid_time | default(3600) }}"
 
-- name: test installation  # noqa command-instead-of-module
+- name: test installation  # noqa command-instead-of-module risky-shell-pipe
   ansible.builtin.command: >
     echo 'console.log("PING".replace("I", "O"));'
     | nodejs

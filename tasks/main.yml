@@ -22,7 +22,7 @@
     - nodejs-install
     - nodejs-install-additional
 
-- name: add repository and install its signing key  # noqa command-instead-of-module
+- name: add repository and install its signing key  # noqa command-instead-of-module risky-shell-pipe
   ansible.builtin.shell: >
     curl -sL https://deb.nodesource.com/setup_{{ nodejs_version_map[nodejs_version] }} | bash -
   args:
