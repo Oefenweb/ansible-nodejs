@@ -53,6 +53,7 @@
     - name: debug  # noqa command-instead-of-module
       ansible.builtin.shell: >
         whereis npm
+      changed_when: false
 
     - name: install node.js packages (specific version)
       community.general.npm:
